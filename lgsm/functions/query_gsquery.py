@@ -61,12 +61,12 @@ class gsquery:
 
     @staticmethod
     def fatal_error(error_message, error_code=1):
-        sys.stderr.write('ERROR: ' + str(error_message) + '\n')
+        sys.stderr.write(f'ERROR: {str(error_message)}' + '\n')
         sys.exit(error_code)
 
     @staticmethod
     def exit_success(success_message=''):
-        sys.stdout.write('OK: ' + str(success_message) + '\n')
+        sys.stdout.write(f'OK: {str(success_message)}' + '\n')
         sys.exit(0)
 
     def responding(self):
